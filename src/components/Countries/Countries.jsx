@@ -14,12 +14,12 @@ const Countries = ({ promiseCountries }) => {
   return (
     <>
       <p>Country Listed: {country.length} </p>
-      <p>Country Visited: {visitedCountries.length}</p>
-      <ol>
+      <p>Country I have Visited: {visitedCountries.length}</p>
+      {/* <ol>
         {visitedCountries.map((country) => (
           <li key={country.cca3.cca3}>{country.name.common}</li>
         ))}
-      </ol>
+      </ol> */}
       <div className="country-grid">
         {country.map((country) => (
           <Country
